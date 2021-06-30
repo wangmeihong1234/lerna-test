@@ -1,9 +1,8 @@
-0 silly argv {
-0 silly argv   _: [ 'bootstrap' ],
-0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'C:\\Users\\May\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
-0 silly argv }
-1 notice cli v4.0.0
-2 verbose rootPath E:\GIT\lerna-repo
-3 info versioning independent
-4 error
+44 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+45 error Error: Command failed with exit code 128: git tag angular-meihongtest2@1.0.5 -m angular-meihongtest2@1.0.5
+45 error fatal: tag 'angular-meihongtest2@1.0.5' already exists
+45 error     at makeError (C:\Users\May\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\lib\error.js:60:11)
+45 error     at handlePromise (C:\Users\May\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:118:26)
+45 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+45 error     at async Promise.all (index 1)
+45 error     at async Promise.all (index 0)
