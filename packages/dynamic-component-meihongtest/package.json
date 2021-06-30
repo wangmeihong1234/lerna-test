@@ -49,5 +49,6 @@
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
   },
-  "repository": {}
+  "repository": {},
+  "gitHead": "1f7597ac7d96730f61096f8ab12890a1c21abca4"
 }
