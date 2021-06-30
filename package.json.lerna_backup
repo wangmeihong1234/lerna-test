@@ -1,0 +1,13 @@
+{
+	"name": "lerna-example",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Example project from an angular.io guide.",
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"scripts": {
+		"publish-ci": "lerna run build && lerna publish --content dist"
+	 },
+	"repository": {}
+}
