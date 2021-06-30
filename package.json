@@ -6,7 +6,9 @@
 	"keywords": [],
 	"author": "",
 	"license": "MIT",
-	
+	"scripts": {
+		"publish-ci": "lerna run build && lerna publish --content dist"
+	 },
 	"dependencies": {
 		"@angular/animations": "~9.0.6",
 		"@angular/common": "~9.0.6",
