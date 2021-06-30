@@ -1,6 +1,6 @@
 {
   "name": "angular-meihongtest2",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "ng": "ng",
