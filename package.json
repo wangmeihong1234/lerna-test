@@ -7,6 +7,9 @@
 	"license": "MIT",
 	"scripts": {
 		"publish-ci": "lerna run build && lerna publish --content dist"
-	 },
-	"repository": {}
+	},
+	"repository": {},
+	"devDependencies": {
+		"lerna": "^4.0.0"
+	}
 }
