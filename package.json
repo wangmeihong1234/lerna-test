@@ -6,7 +6,8 @@
 	"author": "",
 	"license": "MIT",
 	"scripts": {
-		"publish-ci": "lerna run build && lerna publish --content dist"
+		"publish-ci": "lerna run build && lerna publish --content dist",
+		"boot":"lerna bootstrap --hoist"
 	},
 	"repository": {},
 	"devDependencies": {
