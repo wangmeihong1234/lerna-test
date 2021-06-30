@@ -1,7 +1,6 @@
 {
   "name": "angular-io-example",
   "version": "1.0.2",
-  "private": true,
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "ng": "ng",
@@ -10,7 +9,7 @@
     "test": "ng test",
     "lint": "tslint ./src/**/*.ts -t verbose",
     "e2e": "ng e2e"
-    
+
   },
   "keywords": [],
   "author": "",
