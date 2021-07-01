@@ -1,8 +1,121 @@
-44 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
-45 error Error: Command failed with exit code 128: git tag angular-meihongtest2@1.0.5 -m angular-meihongtest2@1.0.5
-45 error fatal: tag 'angular-meihongtest2@1.0.5' already exists
-45 error     at makeError (C:\Users\May\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\lib\error.js:60:11)
-45 error     at handlePromise (C:\Users\May\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:118:26)
-45 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-45 error     at async Promise.all (index 1)
-45 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   contents: 'dist',
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath C:\GIT\lerna-test
+3 info versioning independent
+4 verbose session 9931804d69b46d7d
+5 verbose user-agent lerna/4.0.0/node@v15.8.0+x64 (win32)
+6 silly argv {
+6 silly argv   _: [ 'publish' ],
+6 silly argv   contents: 'dist',
+6 silly argv   composed: 'publish',
+6 silly argv   lernaVersion: '4.0.0'
+6 silly argv }
+7 verbose rootPath C:\GIT\lerna-test
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch main
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 3
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "meihong-test02@0.0.2-alpha.0-3-ge62b830" => {"lastTagName":"meihong-test02@0.0.2-alpha.0","lastVersion":"0.0.2-alpha.0","refCount":"3","sha":"e62b830","isDirty":false}
+18 info Looking for changed packages since meihong-test02@0.0.2-alpha.0
+19 silly checking diff packages/test01
+20 silly found diff in packages/test01/package.json
+21 verbose filtered diff [ 'packages/test01/package.json' ]
+22 silly checking diff packages/test02
+23 silly found diff in packages/test02/README.md
+23 silly found diff in packages/test02/tsconfig.app.json
+24 verbose filtered diff [ 'packages/test02/README.md', 'packages/test02/tsconfig.app.json' ]
+25 verbose updated meihong-test01
+26 verbose updated meihong-test02
+27 verbose git-describe undefined => "meihong-test02@0.0.2-alpha.0-3-ge62b830"
+28 silly git-describe parsed => {"lastTagName":"meihong-test02@0.0.2-alpha.0","lastVersion":"0.0.2-alpha.0","refCount":"3","sha":"e62b830","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "lerna-example", continuing
+31 silly lifecycle No script for "preversion" in "meihong-test01", continuing
+32 silly lifecycle No script for "preversion" in "meihong-test02", continuing
+33 silly lifecycle No script for "version" in "meihong-test02", continuing
+34 silly lifecycle No script for "version" in "meihong-test01", continuing
+35 silly lifecycle No script for "version" in "lerna-example", continuing
+36 silly gitAdd [
+36 silly gitAdd   'packages/test02/package.json',
+36 silly gitAdd   'packages/test01/package.json',
+36 silly gitAdd   'packages/test01/package-lock.json'
+36 silly gitAdd ]
+37 silly gitCommit Publish
+37 silly gitCommit
+37 silly gitCommit  - meihong-test01@0.2.1-alpha.0
+37 silly gitCommit  - meihong-test02@0.0.3-alpha.0
+38 verbose git [
+38 verbose git   'commit',
+38 verbose git   '-F',
+38 verbose git   'C:\\Users\\10159\\AppData\\Local\\Temp\\19c10357-af7c-4f51-a88a-a10019d4b0fd\\lerna-commit.txt'
+38 verbose git ]
+39 silly gitTag meihong-test01@0.2.1-alpha.0
+40 verbose git [
+40 verbose git   'tag',
+40 verbose git   'meihong-test01@0.2.1-alpha.0',
+40 verbose git   '-m',
+40 verbose git   'meihong-test01@0.2.1-alpha.0'
+40 verbose git ]
+41 silly gitTag meihong-test02@0.0.3-alpha.0
+42 verbose git [
+42 verbose git   'tag',
+42 verbose git   'meihong-test02@0.0.3-alpha.0',
+42 verbose git   '-m',
+42 verbose git   'meihong-test02@0.0.3-alpha.0'
+42 verbose git ]
+43 silly lifecycle No script for "postversion" in "meihong-test01", continuing
+44 silly lifecycle No script for "postversion" in "meihong-test02", continuing
+45 silly lifecycle No script for "postversion" in "lerna-example", continuing
+46 info git Pushing tags...
+47 silly gitPush origin main
+48 info publish Publishing packages to npm...
+49 info Verifying npm credentials
+50 verbose Retrieving npm user profile
+51 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 6840ms
+52 silly npm profile get received {"tfa":false,"name":"wangmeihong","email":"1015943755@qq.com","email_verified":true,"created":"2018-08-13T09:18:33.783Z","updated":"2021-06-30T06:28:42.008Z","cidr_whitelist":null}
+53 silly get npm username received {"username":"wangmeihong","tfa":false,"name":"wangmeihong","email":"1015943755@qq.com","email_verified":true,"created":"2018-08-13T09:18:33.783Z","updated":"2021-06-30T06:28:42.008Z","cidr_whitelist":null}
+54 silly verifyNpmPackageAccess
+55 http fetch GET 200 https://registry.npmjs.org/-/org/wangmeihong/package?format=cli 2198ms (cache updated)
+56 info Checking two-factor auth mode
+57 verbose Retrieving npm user profile
+58 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 328ms
+59 silly npm profile get received {"tfa":false,"name":"wangmeihong","email":"1015943755@qq.com","email_verified":true,"created":"2018-08-13T09:18:33.783Z","updated":"2021-06-30T06:28:42.008Z","cidr_whitelist":null}
+60 silly 2FA false
+61 warn ENOLICENSE Packages meihong-test01 and meihong-test02 are missing a license.
+61 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+61 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+62 silly getCurrentSHA
+63 verbose getCurrentSHA ae8656b7dc652d1f2ceae0bf2ab619c4a0441528
+64 silly lifecycle No script for "prepublish" in "lerna-example", continuing
+65 silly lifecycle No script for "prepare" in "lerna-example", continuing
+66 silly lifecycle No script for "prepublishOnly" in "lerna-example", continuing
+67 silly lifecycle No script for "prepack" in "lerna-example", continuing
+68 verbose pack-directory packages\test01\dist
+69 verbose pack-directory packages\test02\dist
+70 silly lifecycle No script for "prepublish" in "meihong-test01", continuing
+71 silly lifecycle No script for "prepublish" in "meihong-test02", continuing
+72 silly lifecycle No script for "prepare" in "meihong-test01", continuing
+73 silly lifecycle No script for "prepare" in "meihong-test02", continuing
+74 silly lifecycle No script for "prepublishOnly" in "meihong-test02", continuing
+75 silly lifecycle No script for "prepublishOnly" in "meihong-test01", continuing
+76 silly lifecycle No script for "prepack" in "meihong-test02", continuing
+77 silly lifecycle No script for "prepack" in "meihong-test01", continuing
+78 silly lifecycle No script for "postpack" in "meihong-test02", continuing
+79 verbose packed packages\test02\dist
+80 silly lifecycle No script for "postpack" in "meihong-test01", continuing
+81 verbose packed packages\test01\dist
+82 silly lifecycle No script for "postpack" in "lerna-example", continuing
+83 verbose publish meihong-test01
+84 verbose publish meihong-test02
+85 error

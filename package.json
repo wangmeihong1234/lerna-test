@@ -6,7 +6,14 @@
 	"author": "",
 	"license": "MIT",
 	"scripts": {
-		"publish-ci": "lerna run build && lerna publish --content dist"
-	 },
-	"repository": {}
+		"publish": "lerna run build && lerna publish --contents dist",
+		"boot": "lerna bootstrap --hoist"
+	},
+	"repository": {},
+	"devDependencies": {
+		"lerna": "^4.0.0"
+	},
+	"dependencies": {
+		"meihong-test02": "^0.0.3-alpha.0"
+	}
 }
